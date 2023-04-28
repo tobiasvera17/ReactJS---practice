@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+        font-family: Arial, Helvetica, sans-serif;  
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color:darkslategray;
+    color: darkslategray;
+    transition: background-color 1s ease-in-out;
+}
+
+#quote-box {
+    background-color: darkslategrey;
+    width: 500px;
+    min-height: 250px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+#text {
+    text-align:center;
+    font-size: 30px;
+    display: block;
+    opacity:1;
+    transition: color 1s ease-in-out;
+}
+
+#text p::before {
+    content: '" ';   
+}
+
+#text p::after {
+    content: ' "';   
+}
+
+#author {
+    padding-top: 10px;
+    float: right;
+    display: block;
+    transition: color 1s ease-in-out;
+}
+
+#author p::before {
+    content: "- ";   
+}
+
+#buttons {
+    display: block;
+    padding-top: 50px;
+}
+
+#buttons button {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background-color:darkslategray;
+    transition: background-color 1s ease-in-out; 
+    color: darkslategrey;
+    font-size: 20px;
+}
+
+#buttons button:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.413);
+}
+
+#tweet-quote {
+    float: left;
+}
+
+#new-quote {
+    float: right;
+}
+
+p{
+    transition: opacity 0.5s ease-in;
+}
